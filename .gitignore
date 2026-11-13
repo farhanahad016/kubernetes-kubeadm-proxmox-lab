@@ -1,0 +1,15 @@
+# Kubernetes secrets - never commit
+admin.conf
+*.kubeconfig
+kubeconfig*
+.kube/
+join-command*.txt
+*.key
+*.pem
+*.crt
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
