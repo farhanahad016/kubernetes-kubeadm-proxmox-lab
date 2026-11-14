@@ -52,3 +52,10 @@ If you want a single node action -> 01 VM -> Quick Practice everything on single
 ## Security note
 
 Never commit `admin.conf`, kubeconfig files, or join tokens. See `.gitignore`.
+
+### To confirm installation:
+# kubectl get pods -A -o wide -> Control Plane -> Pods across the entire cluster
+# sudo crictl pods -> Worker -> Pods on that worker
+# sudo crictl ps -> Worker -> Containers running on that worker
+# systemctl status kubelet -> Worker -> Kubelet service status
+# systemctl status containerd -> Worker -> Container runtime status
