@@ -24,6 +24,9 @@ Step-by-step documentation of building Kubernetes clusters with **kubeadm** on *
 
 ![Proxmox VMs](images/proxmox-vm-overview.png)
 ![System Architecture](images/HomeLabDiagram.png)
+![Control Plane Without Worker Node Services](images/Control-Plane-Without-Worker-Node-Services.png)
+![Control Plane With Worker Node Services](images/Control-Plane-with-Worker-Node-Services.png)
+![Worker Node Services](images/Worker-Node-Services.png)
 
 ## Documentation
 
@@ -54,8 +57,8 @@ If you want a single node action -> 01 VM -> Quick Practice everything on single
 Never commit `admin.conf`, kubeconfig files, or join tokens. See `.gitignore`.
 
 ### To confirm installation:
-# kubectl get pods -A -o wide -> Control Plane -> Pods across the entire cluster
-# sudo crictl pods -> Worker -> Pods on that worker
-# sudo crictl ps -> Worker -> Containers running on that worker
-# systemctl status kubelet -> Worker -> Kubelet service status
-# systemctl status containerd -> Worker -> Container runtime status
+1. kubectl get pods -A -o wide -> Control Plane -> Pods across the entire cluster
+2. sudo crictl pods -> Worker -> Pods on that worker
+3. sudo crictl ps -> Worker -> Containers running on that worker
+4. systemctl status kubelet -> Worker -> Kubelet service status
+5. systemctl status containerd -> Worker -> Container runtime status
