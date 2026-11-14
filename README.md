@@ -46,6 +46,9 @@ Step-by-step documentation of building Kubernetes clusters with **kubeadm** on *
 
 The original raw notes are kept in [`notes/K8s_Kubeadm_Setup_original.txt`](notes/K8s_Kubeadm_Setup_original.txt).
 
+If you want a single node action -> 01 VM -> Quick Practice everything on single node
+# kubectl taint nodes --all node-role.kubernetes.io/control-plane-
+
 ## Security note
 
 Never commit `admin.conf`, kubeconfig files, or join tokens. See `.gitignore`.

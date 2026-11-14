@@ -43,3 +43,6 @@
 3. On Worker Nodes:
 Output of -> (#kubeadm token create --print-join-command) command will be pasted on worker node with root privilege. 
 
+4. If you want a single node action -> 01 VM -> Quick Practice everything on single node
+# kubectl taint nodes --all node-role.kubernetes.io/control-plane-
+
