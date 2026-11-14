@@ -23,7 +23,7 @@ Step-by-step documentation of building Kubernetes clusters with **kubeadm** on *
 | c2 | 302 | c2-w1 | Worker |
 
 ![Proxmox VMs](images/proxmox-vm-overview.png)
-![System Architecture](images/HomeLabDiagram.jpg)
+![System Architecture](images/HomeLabDiagram.png)
 
 ## Documentation
 
